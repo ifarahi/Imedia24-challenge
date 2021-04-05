@@ -1,0 +1,54 @@
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(black, 0.8);
+  z-index: 999;
+
+  &__content {
+    position: absolute;
+    padding: 2rem;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: white;
+    animation: scaleIn 0.4s;
+    animation-fill-mode: backwards;
+
+    &__image {
+      background-color: rgba(grey, 0.2);
+      width: 100%;
+      max-width: 30rem;
+      margin: 3rem;
+      padding: 3rem;
+      border-radius: 3px;
+      box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &__close-btn {
+      font-size: 2.5rem;
+      font-weight: 200;
+      position: absolute;
+      top: 0;
+      right: 1.2rem;
+      transition: all 0.2s;
+
+      &:hover {
+        color: grey;
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+  }
+}

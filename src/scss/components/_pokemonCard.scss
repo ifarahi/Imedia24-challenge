@@ -1,0 +1,28 @@
+.pokemon-card {
+  border: 1px solid grey;
+  text-align: center;
+  margin: 2rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  transition: all 0.2s;
+
+  &__image {
+    width: 18rem;
+    height: 20rem;
+    padding: 2rem;
+  }
+
+  &__body {
+    color: black;
+    text-transform: uppercase;
+    padding: 1.4rem;
+    max-width: 18rem;
+    border-top: 1px solid grey;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.6rem 1rem 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+}

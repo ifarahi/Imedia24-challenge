@@ -1,5 +1,8 @@
 @import "./base/base";
-@import "./base/variables";
+@import "./base/animations.scss";
 
+@import "./components/loadingSvg";
 @import "./components/container";
 @import "./components/pokemonCard";
+@import "./components/popup";
+@import "./components/detailsCard";
